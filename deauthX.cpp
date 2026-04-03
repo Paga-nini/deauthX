@@ -1,4 +1,4 @@
-```#include "generic.h"
+#include "generic.h"
 #include "bgp.h"
 #include "bgp_update.h"
 #include "bgp_attributes.h"
@@ -60,4 +60,4 @@ int main() {
     *attr_len = htons(*attr_len);
     *mp_length = htons(*mp_length);
     dump_buffer(buffer, htons(header->length));
-}```
+}
